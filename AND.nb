@@ -1,0 +1,19 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{"inputs = {{0.,0.},{0.,1.},{1.,0.},{1.,1.}};"}],"\n",RowBox[
+{"salidaAND = {0.,0.,0.,1.};"}],"\n\n",RowBox[{"redAND = NetTrain[\n  NetChain[{LinearLayer[1], LogisticSigmoid}],\n  Thread[inputs \[Rule] salidaAND]\n];"}],"\n\n",RowBox[
+{"TableForm[\n  Table[\n    {inputs[[i]], salidaAND[[i]], Round[redAND[inputs[[i]]]]},\n    {i, Length[inputs]}\n  ],\n  TableHeadings \[Rule] {None, {\"x1,x2\", \"AND Real\", \"AND Pred\"}}\n]\n"}]}],
+"Input",CellLabel -> "In[24]:= ",ExpressionUUID -> "36c77522-b3b3-4467-87c8-b40023fec5c0"],Cell[
+BoxData[
+InterpretationBox[GridBox[{{"\"x1,x2\"","\"AND Real\"","\"AND Pred\""},{GridBox[{{"0.`"},{"0.`"}},
+RowAlignments -> Baseline,ColumnAlignments -> Left,RowSpacings -> 0.25`,ColumnSpacings -> 1],"0.`","0"},{GridBox[
+{{"0.`"},{"1.`"}},RowAlignments -> Baseline,ColumnAlignments -> Left,RowSpacings -> 0.25`,
+ColumnSpacings -> 1],"0.`","0"},{GridBox[{{"1.`"},{"0.`"}},RowAlignments -> Baseline,
+ColumnAlignments -> Left,RowSpacings -> 0.25`,ColumnSpacings -> 1],"0.`","0"},{GridBox[
+{{"1.`"},{"1.`"}},RowAlignments -> Baseline,ColumnAlignments -> Left,RowSpacings -> 0.25`,
+ColumnSpacings -> 1],"1.`","1"}},RowAlignments -> Baseline,ColumnAlignments -> Center,
+RowSpacings -> 1,ColumnSpacings -> 3],TableForm[{{{0.`,0.`},0.`,0},{{0.`,1.`},0.`,0},{{1.`,0.`},0.`,0},{{1.`,1.`},1.`,1}},
+TableHeadings -> {None,{"x1,x2","AND Real","AND Pred"}}]],StandardForm],"Output",
+CellLabel -> "Out[27]//TableForm= ",ExpressionUUID -> "70d2c1be-b8c5-40ea-94cb-c06d5997af9a"]},
+Open],ExpressionUUID -> "7cb47c9e-01bd-4142-bf02-a73ad213b84c"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "14.3 for Wolfram Cloud 1.73 (July 23, 2025)"]

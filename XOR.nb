@@ -1,0 +1,23 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{"salidaXOR = {0.,1.,1.,0.};"}],"\n\n",RowBox[
+{"redXOR = NetTrain[\n  NetChain[{\n    LinearLayer[4], Tanh,\n    LinearLayer[1], LogisticSigmoid\n  }],\n  Thread[inputs \[Rule] salidaXOR],\n  MaxTrainingRounds \[Rule] 1500\n];"}],"\n\n",RowBox[
+{"TableForm[\n  Table[\n    {inputs[[i]], salidaXOR[[i]], Round[redXOR[inputs[[i]]]]},\n    {i, Length[inputs]}\n  ],\n  TableHeadings \[Rule] {None, {\"x1,x2\", \"XOR Real\", \"XOR Pred\"}}\n]\n"}]}],
+"Input",CellLabel -> "In[31]:= ",ExpressionUUID -> "cd23300d-6d67-465c-956d-065cc9f781db"],Cell[
+BoxData[
+InterpretationBox[GridBox[{{"\"x1,x2\"","\"XOR Real\"","\"XOR Pred\""},{GridBox[{{"0.`"},{"0.`"}},
+RowAlignments -> Baseline,ColumnAlignments -> Left,RowSpacings -> 0.25`,ColumnSpacings -> 1],"0.`","0"},{GridBox[
+{{"0.`"},{"1.`"}},RowAlignments -> Baseline,ColumnAlignments -> Left,RowSpacings -> 0.25`,
+ColumnSpacings -> 1],"1.`","1"},{GridBox[{{"1.`"},{"0.`"}},RowAlignments -> Baseline,
+ColumnAlignments -> Left,RowSpacings -> 0.25`,ColumnSpacings -> 1],"1.`","1"},{GridBox[
+{{"1.`"},{"1.`"}},RowAlignments -> Baseline,ColumnAlignments -> Left,RowSpacings -> 0.25`,
+ColumnSpacings -> 1],"0.`","0"}},RowAlignments -> Baseline,ColumnAlignments -> Center,
+RowSpacings -> 1,ColumnSpacings -> 3],TableForm[{{{0.`,0.`},0.`,0},{{0.`,1.`},1.`,1},{{1.`,0.`},1.`,1},{{1.`,1.`},0.`,0}},
+TableHeadings -> {None,{"x1,x2","XOR Real","XOR Pred"}}]],StandardForm],"Output",
+CellLabel -> "Out[33]//TableForm= ",ExpressionUUID -> "49fb4ef7-9f67-4f38-b70d-55bc9efdd729"]},
+Open],ExpressionUUID -> "4c8b55c7-a5fd-4c4e-bfc6-ceaba39d2c53"],Cell[
+BoxData[""],
+"Input",ExpressionUUID -> "677cd42a-59f5-43c4-91d2-e5874187b1ba"],Cell[
+BoxData[""],
+"Input",ExpressionUUID -> "cf31a9a8-e187-45ef-9997-06dc55e90463"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "14.3 for Wolfram Cloud 1.73 (July 23, 2025)"]

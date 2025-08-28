@@ -1,0 +1,18 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{"salidaOR = {0.,1.,1.,1.};"}],"\n\n",RowBox[
+{"redOR = NetTrain[\n  NetChain[{LinearLayer[1], LogisticSigmoid}],\n  Thread[inputs \[Rule] salidaOR]\n];"}],"\n\n",RowBox[
+{"TableForm[\n  Table[\n    {inputs[[i]], salidaOR[[i]], Round[redOR[inputs[[i]]]]},\n    {i, Length[inputs]}\n  ],\n  TableHeadings \[Rule] {None, {\"x1,x2\", \"OR Real\", \"OR Pred\"}}\n]\n"}]}],
+"Input",CellLabel -> "In[28]:= ",ExpressionUUID -> "e136759d-febf-4342-bd24-a9c0e4688b56"],Cell[
+BoxData[
+InterpretationBox[GridBox[{{"\"x1,x2\"","\"OR Real\"","\"OR Pred\""},{GridBox[{{"0.`"},{"0.`"}},
+RowAlignments -> Baseline,ColumnAlignments -> Left,RowSpacings -> 0.25`,ColumnSpacings -> 1],"0.`","0"},{GridBox[
+{{"0.`"},{"1.`"}},RowAlignments -> Baseline,ColumnAlignments -> Left,RowSpacings -> 0.25`,
+ColumnSpacings -> 1],"1.`","1"},{GridBox[{{"1.`"},{"0.`"}},RowAlignments -> Baseline,
+ColumnAlignments -> Left,RowSpacings -> 0.25`,ColumnSpacings -> 1],"1.`","1"},{GridBox[
+{{"1.`"},{"1.`"}},RowAlignments -> Baseline,ColumnAlignments -> Left,RowSpacings -> 0.25`,
+ColumnSpacings -> 1],"1.`","1"}},RowAlignments -> Baseline,ColumnAlignments -> Center,
+RowSpacings -> 1,ColumnSpacings -> 3],TableForm[{{{0.`,0.`},0.`,0},{{0.`,1.`},1.`,1},{{1.`,0.`},1.`,1},{{1.`,1.`},1.`,1}},
+TableHeadings -> {None,{"x1,x2","OR Real","OR Pred"}}]],StandardForm],"Output",CellLabel -> "Out[30]//TableForm= ",
+ExpressionUUID -> "3cfbf934-83fb-4787-9c6a-96a003f915ed"]},Open],ExpressionUUID -> "fb832d92-2cb1-4e80-b4ff-baf1450f3662"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "14.3 for Wolfram Cloud 1.73 (July 23, 2025)"]
