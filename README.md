@@ -1,15 +1,15 @@
-# 🧠 RNA para Compuertas Lógicas
+# RNA para Compuertas Lógicas
 
 Este proyecto implementa Redes Neuronales Artificiales (RNA) simples para simular el comportamiento de **compuertas lógicas** básicas usando *Wolfram Mathematica*.
 
 ---
 
-## 📌 Objetivo
+## Objetivo
 Entrenar una red neuronal para que aprenda la tabla de verdad de cada compuerta lógica (AND, OR, XOR) y pueda predecir su salida correctamente.
 
 ---
 
-## ⚙️ Compuertas implementadas
+## Compuertas implementadas
 1. **AND**
    - Entrada: (0,0), (0,1), (1,0), (1,1)
    - Salida esperada: 0, 0, 0, 1
@@ -24,7 +24,7 @@ Entrenar una red neuronal para que aprenda la tabla de verdad de cada compuerta 
 
 ---
 
-## 🛠️ Estructura de cada código
+## Estructura de cada código
 Cada archivo de Wolfram Mathematica incluye:
 - Definición de las entradas y salidas reales.
 - Creación de la red neuronal con `NetChain`.
@@ -34,7 +34,7 @@ Cada archivo de Wolfram Mathematica incluye:
 
 ---
 
-## 🚀 Cómo usar
+## Cómo usar
 1. Abre el archivo correspondiente en **Wolfram Mathematica**.
 2. Ejecuta cada celda en orden.
 3. Revisa la tabla de predicciones generada.
@@ -42,16 +42,15 @@ Cada archivo de Wolfram Mathematica incluye:
 
 ---
 
-## 📂 Archivos
+## Archivos
 - `RNA_AND.nb` → Red neuronal para compuerta **AND**
 - `RNA_OR.nb` → Red neuronal para compuerta **OR**
 - `RNA_XOR.nb` → Red neuronal para compuerta **XOR**
 
 ---
 
-## 📊 Resultados esperados
+## Resultados esperados
 La red debe aprender correctamente el comportamiento de cada compuerta después del entrenamiento, mostrando coincidencia entre la **salida real** y la **predicción**.
 
 ---
 
-✍️ Proyecto realizado como práctica de **Redes Neuronales Artificiales**.
