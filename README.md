@@ -43,9 +43,9 @@ Cada archivo de Wolfram Mathematica incluye:
 ---
 
 ## Archivos
-- `RNA_AND.nb` → Red neuronal para compuerta **AND**
-- `RNA_OR.nb` → Red neuronal para compuerta **OR**
-- `RNA_XOR.nb` → Red neuronal para compuerta **XOR**
+- `AND.nb` → Red neuronal para compuerta **AND**
+- `OR.nb` → Red neuronal para compuerta **OR**
+- `XOR.nb` → Red neuronal para compuerta **XOR**
 
 ---
 
