@@ -1,6 +1,6 @@
 # RNA para Compuertas Lógicas
 
-Este proyecto implementa Redes Neuronales Artificiales (RNA) simples para simular el comportamiento de **compuertas lógicas** básicas usando *Wolfram Mathematica*.
+Este proyecto implementa Redes Neuronales Artificiales (RNA) simples para simular el comportamiento de **compuertas lógicas** básicas usando *Wolfram One*.
 
 ---
 
@@ -25,7 +25,7 @@ Entrenar una red neuronal para que aprenda la tabla de verdad de cada compuerta 
 ---
 
 ## Estructura de cada código
-Cada archivo de Wolfram Mathematica incluye:
+Cada archivo de Wolfram One incluye:
 - Definición de las entradas y salidas reales.
 - Creación de la red neuronal con `NetChain`.
 - Entrenamiento de la red con `NetTrain`.
@@ -35,7 +35,7 @@ Cada archivo de Wolfram Mathematica incluye:
 ---
 
 ## Cómo usar
-1. Abre el archivo correspondiente en **Wolfram Mathematica**.
+1. Abre el archivo correspondiente en **Wolfram One**.
 2. Ejecuta cada celda en orden.
 3. Revisa la tabla de predicciones generada.
 4. Compara los resultados con la tabla de verdad.
